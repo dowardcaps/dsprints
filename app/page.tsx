@@ -16,6 +16,7 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 import RushIDPackage from "@/public/components/RushIDPackage";
+import LaminateAndPhotoPrint from "@/public/components/LaminateAndPhotoPrint";
 
 
 export default function Home() {
@@ -190,6 +191,9 @@ export default function Home() {
       {/* RUSH ID Section */}
       <RushIDPackage />
 
+      {/* Laminate and Photo Print section */}
+      <LaminateAndPhotoPrint />
+
       {/* Footer / Contact Section */}
       <footer id="contact" className="bg-blue-950 text-slate-200 pt-16 pb-8">
         <div className="max-w-7xl mx-auto px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-blue-900 pb-12">
@@ -233,9 +237,9 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="lucide lucide-facebook-icon lucide-facebook text-blue-500"
                   >
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
