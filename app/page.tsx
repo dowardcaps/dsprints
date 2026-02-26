@@ -17,6 +17,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import RushIDPackage from "@/public/components/RushIDPackage";
 import LaminateAndPhotoPrint from "@/public/components/LaminateAndPhotoPrint";
+import XeroxAndDocuPrinting from "@/public/components/XeroxAndDocuPrinting";
 
 
 export default function Home() {
@@ -48,7 +49,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-slate-50 font-sans text-slate-900 overflow-x-hidden">
+    <main className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden">
       {/* Navigation */}
       <nav className="bg-blue-950 h-20 flex justify-between items-center px-6 md:px-12 text-white sticky top-0 z-50 shadow-lg">
         {/* Mobile Menu Button (Left Side) */}
@@ -187,6 +188,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Photocopy/Xerox and Document Printing section */}
+      <XeroxAndDocuPrinting />
 
       {/* RUSH ID Section */}
       <RushIDPackage />

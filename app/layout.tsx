@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Configure Montserrat
+const montserrat = Montserrat({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
-  title: "DS Prints & Supplies",
+  title: "DS Prints & Supplies | Quality Printing Services in Tanza, Cavite",
   description: "DS Prints & Supplies offers affordable, high-quality Rush ID packages, document printing, lamination, and photo printing in Amaya 1, Tanza. Your one-stop shop for school supplies and digital services.",
   keywords: ["Printing Services Cavite", "Rush ID Tanza", "Photo Printing", "Laminating Services", "School Supplies Tanza", "DS Prints"],
 };
@@ -25,8 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      {/* Adding suppressHydrationWarning here tells React not to 
+          panic if browser extensions add extra attributes 
+      */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} font-sans antialiased`}
+        suppressHydrationWarning={true} 
       >
         {children}
       </body>

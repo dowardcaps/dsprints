@@ -30,7 +30,7 @@ const LaminateAndPhotoPrint = () => {
 
 
 // Inside your return block:
-<section className="py-20 px-6 bg-white">
+<section className="py-20 px-6 bg-slate-100">
   <div className="max-w-7xl mx-auto">
     <div className="text-center mb-12" data-aos="fade-up">
       <h2 className="text-3xl font-bold text-blue-950 uppercase">Printing & Lamination Rates</h2>

@@ -10,7 +10,7 @@ const idPackages = [
 
 const RushIDPackage = () => {
   return (
-    <section id="pricing" className="py-20 bg-slate-100">
+    <section id="pricing" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-20">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 uppercase tracking-tight">
