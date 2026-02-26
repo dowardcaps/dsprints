@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.container_padding {
+  @apply px-4 sm:px-8 md:px-16 lg:px-24 xl:px-28 2xl:px-32
+}
