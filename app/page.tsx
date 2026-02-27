@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden">
       {/* Navigation */}
-      <nav className="bg-blue-950 h-20 flex justify-between items-center px-6 md:px-12 text-white sticky top-0 z-50 shadow-lg">
+      <nav className="w-full bg-blue-950 h-20 flex justify-between items-center px-6 md:px-12 text-white fixed top-0 z-50 shadow-lg">
         {/* Mobile Menu Button (Left Side) */}
         <button
           className="md:hidden p-2 hover:bg-blue-900 rounded-lg transition-colors"
