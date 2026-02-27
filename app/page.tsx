@@ -18,6 +18,7 @@ import "aos/dist/aos.css";
 import RushIDPackage from "@/public/components/RushIDPackage";
 import LaminateAndPhotoPrint from "@/public/components/LaminateAndPhotoPrint";
 import XeroxAndDocuPrinting from "@/public/components/XeroxAndDocuPrinting";
+import GCashRates from "@/public/components/GCashRates";
 
 
 export default function Home() {
@@ -51,7 +52,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden">
       {/* Navigation */}
-      <nav className="w-full bg-blue-950 h-20 flex justify-between items-center px-6 md:px-12 text-white fixed top-0 z-50 shadow-lg">
+      <nav className="w-full bg-blue-900 h-20 flex justify-between items-center px-6 md:px-12 text-white fixed top-0 z-50 shadow-lg">
         {/* Mobile Menu Button (Left Side) */}
         <button
           className="md:hidden p-2 hover:bg-blue-900 rounded-lg transition-colors"
@@ -197,6 +198,9 @@ export default function Home() {
 
       {/* Laminate and Photo Print section */}
       <LaminateAndPhotoPrint />
+
+      {/* GCash Rates section */}
+      <GCashRates />
 
       {/* Footer / Contact Section */}
       <footer id="contact" className="bg-blue-950 text-slate-200 pt-16 pb-8">
