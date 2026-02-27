@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center bg-blue-900 text-white overflow-hidden">
+      <section className="relative h-[70vh] max-md:h-screen flex items-center justify-center bg-blue-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
             src="/images/heroBG.png"
@@ -45,7 +45,7 @@ export default function Home() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="relative z-10 text-center px-4" data-aos="fade-up">
+        <div className="relative z-10 text-center px-4 justify-center" data-aos="fade-up">
           <h2 className="text-4xl md:text-6xl font-extrabold mb-4 uppercase tracking-tighter">
             Your One-Stop Print Shop
           </h2>
@@ -53,7 +53,8 @@ export default function Home() {
             High-quality printing, digital services, and school supplies located
             in the heart of Tanza.
           </p>
-          <a href="#services" className="cursor-pointer">
+          <div className="flex items-center justify-center gap-2 max-md:flex-col">
+            <a href="#services" className="cursor-pointer">
             <button
               className="mt-8 bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 active:scale-95 shadow-xl
             cursor-pointer"
@@ -62,6 +63,16 @@ export default function Home() {
               View Our Services
             </button>
           </a>
+          <a href="/pricelists" className="cursor-pointer">
+            <button
+              className="mt-8 bg-white hover:bg-slate-50 px-8 py-3 text-black rounded-full font-bold transition-all transform hover:scale-105 active:scale-95 shadow-xl
+            cursor-pointer"
+              aria-label="services button"
+            >
+              Price Lists
+            </button>
+          </a>
+          </div>
         </div>
       </section>
 
