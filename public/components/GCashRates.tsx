@@ -40,7 +40,7 @@ const GCashRates = () => {
     </div>
 
     {/* Transaction Table */}
-    <div className="bg-slate-50 rounded-[2rem] p-4 md:p-10 border border-slate-100 shadow-sm" data-aos="zoom-in">
+    <div className="bg-slate-50 rounded-4xl p-4 md:p-10 border border-slate-100 shadow-sm" data-aos="zoom-in">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2">
         {/* Header hidden on mobile, shown on desktop */}
         <div className="hidden md:flex justify-between px-4 py-2 bg-blue-950 text-white rounded-t-xl font-bold text-sm uppercase tracking-widest">
