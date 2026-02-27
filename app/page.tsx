@@ -1,5 +1,3 @@
-"use client";
-import React, { useEffect, useState } from "react";
 import {
   Printer,
   Copy,
@@ -7,23 +5,12 @@ import {
   Image as ImageIcon,
   Palette,
   Smartphone,
-  Mail,
   Contact,
-  MapPin,
 } from "lucide-react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import SubmissionProcess from "@/public/components/SubmissionProcess";
 import FAQSection from "@/public/components/FAQ";
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
   const services = [
     { title: "Document Print", icon: <Printer size={32} /> },
     { title: "Xerox & Scan", icon: <Copy size={32} /> },
@@ -45,7 +32,7 @@ export default function Home() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="relative z-10 text-center px-4 justify-center" data-aos="fade-up">
+        <div className="relative z-10 text-center px-4 justify-center">
           <h2 className="text-4xl md:text-6xl font-extrabold mb-4 uppercase tracking-tighter">
             Your One-Stop Print Shop
           </h2>
@@ -78,7 +65,7 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="services" className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
-        <div className="text-center mb-16" data-aos="fade-up">
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 uppercase">
             Our Services
           </h2>
@@ -89,8 +76,6 @@ export default function Home() {
           {services.map((service, index) => (
             <div
               key={index}
-              data-aos="fade-up"
-              data-aos-delay={index * 50}
               className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col items-center text-center group"
             >
               <div className="text-blue-600 mb-4 bg-blue-50 p-4 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">

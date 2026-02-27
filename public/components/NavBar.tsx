@@ -6,7 +6,6 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Services", href: "#services" },
   { name: "Contact", href: "#contact" },
-  { name: "FAQ", href: "#faq" },
   { name: "Price Lists", href: "/pricelists" },
 ];
 
@@ -28,14 +27,14 @@ const NavBar = () => {
           <Menu className="cursor-pointer" size={28} />
         </button>
 
-        <div className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2" aria-label="home button">
           <div className="w-10 h-10">
             <img src="/images/icon.png" alt="logo" width={40} height={40} />
           </div>
           <h1 className="font-bold text-lg md:text-2xl tracking-tight">
             DS PRINTS & SUPPLIES
           </h1>
-        </div>
+        </a>
 
         {/* Desktop Menu */}
         <ul className="flex items-center gap-8 max-md:hidden font-medium">

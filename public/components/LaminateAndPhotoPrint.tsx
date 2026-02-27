@@ -4,6 +4,8 @@ import {
   Image as ImageIcon,
 
 } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const photoPrintRates = [
   { size: "2R / Wallet", dim: '2.5" x 3.5"', price: "15" },
@@ -26,20 +28,16 @@ const laminateRates = [
 ];
 const LaminateAndPhotoPrint = () => {
   return (
-    // Data extracted from your uploaded images
-
-
-// Inside your return block:
 <section className="py-20 px-6 bg-slate-100">
   <div className="max-w-7xl mx-auto">
-    <div className="text-center mb-12" data-aos="fade-up">
+    <div className="text-center mb-12">
       <h2 className="text-3xl font-bold text-blue-950 uppercase">Printing & Lamination Rates</h2>
       <div className="h-1.5 w-20 bg-blue-600 mx-auto mt-4 rounded-full"></div>
     </div>
 
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
       {/* Photo Print Section */}
-      <div className="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-100" data-aos="fade-right">
+      <div className="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-100">
         <div className="flex items-center gap-3 mb-8">
           <ImageIcon className="text-blue-600" size={28} />
           <h3 className="text-2xl font-black text-blue-950 tracking-tight">PHOTO PRINT</h3>
@@ -61,7 +59,7 @@ const LaminateAndPhotoPrint = () => {
       </div>
 
       {/* Laminate Section */}
-      <div className="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-100" data-aos="fade-left">
+      <div className="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-100">
         <div className="flex items-center gap-3 mb-8">
           <Layers className="text-blue-600" size={28} />
           <h3 className="text-2xl font-black text-blue-950 tracking-tight">LAMINATE</h3>

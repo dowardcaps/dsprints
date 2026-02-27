@@ -1,5 +1,7 @@
 import { Smartphone } from 'lucide-react';
 import React from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const gcashRates = [
   { amount: "1 - 500", charge: "5" },
@@ -28,7 +30,7 @@ const GCashRates = () => {
   return (
     <section id="gcash" className="py-20 px-6 bg-white">
   <div className="max-w-5xl mx-auto">
-    <div className="text-center mb-12" data-aos="fade-up">
+    <div className="text-center mb-12">
       <div className="flex justify-center mb-4">
         <div className="bg-blue-600 p-3 rounded-2xl text-white shadow-lg shadow-blue-200">
           <Smartphone size={32} />
@@ -40,7 +42,7 @@ const GCashRates = () => {
     </div>
 
     {/* Transaction Table */}
-    <div className="bg-slate-50 rounded-4xl p-4 md:p-10 border border-slate-100 shadow-sm" data-aos="zoom-in">
+    <div className="bg-slate-50 rounded-4xl p-4 md:p-10 border border-slate-100 shadow-sm">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2">
         {/* Header hidden on mobile, shown on desktop */}
         <div className="hidden md:flex justify-between px-4 py-2 bg-blue-950 text-white rounded-t-xl font-bold text-sm uppercase tracking-widest">

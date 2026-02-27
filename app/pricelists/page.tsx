@@ -12,10 +12,10 @@ const PriceLists = () => {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pb-20">
       {/* Header Section */}
       <div className="bg-blue-950 text-white pt-30 pb-10 px-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-4" data-aos="fade-down">
+        <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-4">
           Service Price Lists
         </h1>
-        <p className="text-blue-200 max-w-xl mx-auto font-medium" data-aos="fade-up">
+        <p className="text-blue-200 max-w-xl mx-auto font-medium">
           Transparent pricing for all your digital, printing, and transaction.
         </p>
       </div>
@@ -24,25 +24,25 @@ const PriceLists = () => {
       <div className="max-w-7xl mx-auto px-6 mt-12 space-y-24">
         
         {/* Photocopy/Xerox and Document Printing */}
-        <section id="printing" className="scroll-mt-40" data-aos="fade-up">
+        <section id="printing" className="scroll-mt-40">
           <SectionHeader title="Printing & Xerox" subtitle="Black & White to Full Color" />
           <XeroxAndDocuPrinting />
         </section>
 
         {/* RUSH ID Section */}
-        <section id="rush-id" className="scroll-mt-40" data-aos="fade-up">
+        <section id="rush-id" className="scroll-mt-40">
           <SectionHeader title="RUSH ID Packages" subtitle="High Print Quality" />
           <RushIDPackage />
         </section>
 
         {/* Laminate and Photo Print */}
-        <section id="photo" className="scroll-mt-40" data-aos="fade-up">
+        <section id="photo" className="scroll-mt-40">
           <SectionHeader title="Photo & Laminate" subtitle="Preserve your memories" />
           <LaminateAndPhotoPrint />
         </section>
 
         {/* GCash Rates */}
-        <section id="gcash" className="scroll-mt-40" data-aos="fade-up">
+        <section id="gcash" className="scroll-mt-40">
           <SectionHeader title="GCash Rates" subtitle="Cash-in and Cash-out" />
           <GCashRates />
         </section>

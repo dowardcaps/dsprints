@@ -12,7 +12,7 @@ const RushIDPackage = () => {
   return (
     <section id="pricing" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-20">
-        <div className="text-center mb-16" data-aos="fade-up">
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 uppercase tracking-tight">
             Rush ID Packages
           </h2>
@@ -27,8 +27,6 @@ const RushIDPackage = () => {
           {idPackages.map((pkg, index) => (
             <div
               key={pkg.id}
-              data-aos="zoom-in"
-              data-aos-delay={index * 100}
               className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col items-center text-center hover:border-blue-500 transition-all group"
             >
               <span className="bg-blue-950 text-white text-sm font-bold px-3 py-1 rounded-full mb-4">
@@ -46,7 +44,6 @@ const RushIDPackage = () => {
 
         {/* Add-ons Box */}
         <div
-          data-aos="fade-up"
           className="max-w-md mx-auto bg-blue-950 rounded-2xl p-8 text-white shadow-xl relative overflow-hidden"
         >
           {/* Decorative SVG background element */}
