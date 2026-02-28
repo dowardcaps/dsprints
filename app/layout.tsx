@@ -47,15 +47,21 @@ export default function RootLayout({
         {children}
 
         {/* Footer / Contact Section */}
-        <footer id="contact" className="bg-blue-950 text-slate-200 pt-16 pb-8 absolute w-full left-0">
+        <footer
+          id="contact"
+          className="bg-blue-950 text-slate-200 pt-16 pb-8 absolute w-full left-0"
+        >
           <div className="max-w-7xl mx-auto px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-blue-900 pb-12">
             <div>
+              <div className="w-25 h-25 mb-5">
+                <a href="/" aria-label="go to home"><img src="/images/icon.png" alt="logo" width={100} height={100} /></a>
+              </div>
               <h3 className="text-white text-xl font-bold mb-4">
                 DS PRINTS & SUPPLIES
               </h3>
               <p className="leading-relaxed">
-                Providing quality printing, design layouts, and
-                essential school supplies. We make your digital needs a reality.
+                Providing quality printing, design layouts, and essential school
+                supplies. We make your digital needs a reality.
               </p>
             </div>
 

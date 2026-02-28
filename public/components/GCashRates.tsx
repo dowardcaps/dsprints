@@ -97,12 +97,6 @@ const GCashRates = () => {
                 </div>
               ))}
             </div>
-            
-            <div className="mt-10 text-center">
-              <span className="inline-block bg-blue-600 text-white font-bold px-8 py-3 rounded-full text-xs uppercase tracking-widest shadow-lg shadow-blue-200">
-                Rates apply to both Cash-in and Cash-out
-              </span>
-            </div>
           </div>
         </div>
       </div>
