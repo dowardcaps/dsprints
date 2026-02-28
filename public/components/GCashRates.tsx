@@ -28,7 +28,7 @@ const gcashRates = [
 
 const GCashRates = () => {
   return (
-    <section id="gcash" className="py-20 px-6 bg-white">
+    <section id="gcash" className="py-20 px-6">
   <div className="max-w-5xl mx-auto">
     <div className="text-center mb-12">
       <div className="flex justify-center mb-4">
@@ -37,19 +37,19 @@ const GCashRates = () => {
         </div>
       </div>
       <h2 className="text-3xl font-black text-blue-950 uppercase tracking-tight">GCash Cash-In & Cash-Out</h2>
-      <p className="text-slate-500 mt-2 italic font-medium">Fast and reliable transaction service</p>
+      <p className="mt-2 italic font-medium">Fast and reliable transaction service</p>
       <div className="h-1.5 w-20 bg-blue-600 mx-auto mt-4 rounded-full"></div>
     </div>
 
     {/* Transaction Table */}
-    <div className="bg-slate-50 rounded-4xl p-4 md:p-10 border border-slate-100 shadow-sm">
+    <div className="bg-slate-50 text-xl rounded-4xl p-4 md:p-10 border border-slate-100 shadow-sm">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2">
         {/* Header hidden on mobile, shown on desktop */}
-        <div className="hidden md:flex justify-between px-4 py-2 bg-blue-950 text-white rounded-t-xl font-bold text-sm uppercase tracking-widest">
+        <div className="hidden md:flex justify-between px-4 py-2 bg-blue-950 text-white rounded-t-xl font-bold uppercase tracking-widest">
           <span>Amount</span>
           <span>Charge</span>
         </div>
-        <div className="hidden md:flex justify-between px-4 py-2 bg-blue-950 text-white rounded-t-xl font-bold text-sm uppercase tracking-widest">
+        <div className="hidden md:flex justify-between px-4 py-2 bg-blue-950 text-white rounded-t-xl font-bold uppercase tracking-widest">
           <span>Amount</span>
           <span>Charge</span>
         </div>
@@ -63,7 +63,7 @@ const GCashRates = () => {
       </div>
       
       <div className="mt-8 text-center">
-        <span className="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest">
+        <span className="inline-block bg-blue-100 text-blue-700 font-bold px-4 py-2 rounded-full uppercase tracking-widest">
           Rates apply to both Cash-in and Cash-out
         </span>
       </div>

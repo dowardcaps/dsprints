@@ -28,7 +28,7 @@ const laminateRates = [
 ];
 const LaminateAndPhotoPrint = () => {
   return (
-<section className="py-20 px-6 bg-slate-100">
+<section className="py-20 px-6">
   <div className="max-w-7xl mx-auto">
     <div className="text-center mb-12">
       <h2 className="text-3xl font-bold text-blue-950 uppercase">Printing & Lamination Rates</h2>
@@ -44,10 +44,10 @@ const LaminateAndPhotoPrint = () => {
         </div>
         <div className="space-y-4">
           {photoPrintRates.map((item, idx) => (
-            <div key={idx} className="flex justify-between items-center group">
+            <div key={idx} className="flex justify-between items-center group text-lg">
               <div>
                 <p className="font-bold text-slate-800">{item.size}</p>
-                <p className="text-xs text-slate-500 uppercase">{item.dim}</p>
+                <p className="text-slate-500 uppercase">{item.dim}</p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="h-px w-12 bg-slate-200 group-hover:w-20 transition-all duration-300"></div>
@@ -69,7 +69,7 @@ const LaminateAndPhotoPrint = () => {
             <div key={idx} className="flex justify-between items-center group">
               <div>
                 <p className="font-bold text-slate-800">{item.size}</p>
-                <p className="text-xs text-slate-500 uppercase">{item.dim}</p>
+                <p className="text-slate-500 uppercase text-lg">{item.dim}</p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="h-px w-12 bg-slate-200 group-hover:w-20 transition-all duration-300"></div>
@@ -81,7 +81,7 @@ const LaminateAndPhotoPrint = () => {
       </div>
     </div>
     
-    <p className="text-center text-slate-400 text-sm mt-12 italic">
+    <p className="text-center mt-12 italic">
       * Prices are subject to change without prior notice. High-quality waterproof ink used.
     </p>
   </div>

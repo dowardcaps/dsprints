@@ -42,12 +42,12 @@ const photocopyXerox = {
 
 const XeroxAndDocuPrinting = () => {
   return (
-    <section className="py-20 px-6 bg-slate-100">
+    <section className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Document Printing Card */}
           <div
-            className="bg-white rounded-3xl p-8 shadow-md border border-slate-100"
+            className="bg-white rounded-3xl p-8 shadow-md border border-slate-100 text-lg"
           >
             <h3 className="text-2xl font-black text-blue-950 mb-6 border-b-4 border-blue-600 pb-2 inline-block uppercase">
               Document Printing
@@ -67,7 +67,7 @@ const XeroxAndDocuPrinting = () => {
                     <span className="text-slate-700">{item.type}</span>
                     <span className="font-bold text-slate-900">
                       ₱{item.price}{" "}
-                      <span className="text-sm text-slate-500 font-normal">
+                      <span className="text-slate-500">
                         /page
                       </span>
                     </span>
@@ -87,7 +87,7 @@ const XeroxAndDocuPrinting = () => {
                     <span className="text-slate-700">{item.type}</span>
                     <span className="font-bold text-slate-900">
                       ₱{item.price}{" "}
-                      <span className="text-sm text-slate-500 font-normal">
+                      <span className="text-slate-500">
                         /page
                       </span>
                     </span>
@@ -107,7 +107,7 @@ const XeroxAndDocuPrinting = () => {
                     <span className="text-slate-700">{item.type}</span>
                     <span className="font-bold text-slate-900">
                       ₱{item.price}{" "}
-                      <span className="text-sm text-slate-500 font-normal">
+                      <span className="text-slate-500">
                         /page
                       </span>
                     </span>
@@ -121,7 +121,7 @@ const XeroxAndDocuPrinting = () => {
                   ● SCAN (softcopy)
                 </h4>
                 {documentPrinting.scan.map((item, i) => (
-                  <div key={i} className="flex justify-between text-sm">
+                  <div key={i} className="flex justify-between">
                     <span className="text-slate-700">{item.type}</span>
                     <span className="font-bold text-blue-700">
                       ₱{item.price} /page
@@ -134,7 +134,7 @@ const XeroxAndDocuPrinting = () => {
 
           {/* Photocopy / Xerox Card */}
           <div
-            className="bg-white rounded-3xl p-8 shadow-md border border-slate-100"
+            className="bg-white rounded-3xl p-8 shadow-md border border-slate-100 text-lg"
           >
             <h3 className="text-2xl font-black text-blue-950 mb-6 border-b-4 border-blue-600 pb-2 inline-block uppercase">
               Photocopy / Xerox
@@ -154,7 +154,7 @@ const XeroxAndDocuPrinting = () => {
                     <span className="text-slate-700">{item.type}</span>
                     <span className="font-bold text-slate-900">
                       ₱{item.price}{" "}
-                      <span className="text-sm text-slate-500 font-normal">
+                      <span className="text-slate-500">
                         /page
                       </span>
                     </span>
@@ -175,7 +175,7 @@ const XeroxAndDocuPrinting = () => {
                     <span className="text-slate-700">{item.type}</span>
                     <span className="font-bold text-slate-900">
                       ₱{item.price}{" "}
-                      <span className="text-sm text-slate-500 font-normal">
+                      <span className="text-slate-500">
                         /page
                       </span>
                     </span>
@@ -196,7 +196,7 @@ const XeroxAndDocuPrinting = () => {
                     <span className="text-slate-700">{item.type}</span>
                     <span className="font-bold text-slate-900">
                       ₱{item.price}{" "}
-                      <span className="text-sm text-slate-500 font-normal">
+                      <span className="text-slate-500">
                         /page
                       </span>
                     </span>
@@ -205,7 +205,7 @@ const XeroxAndDocuPrinting = () => {
               </div>
 
               {/* Business Tip Box */}
-              <div className="mt-10 p-4 border-2 border-blue-100 rounded-2xl bg-white italic text-sm text-slate-500 text-center">
+              <div className="mt-10 p-4 border-2 border-blue-100 rounded-2xl bg-white italic text-slate-500 text-center">
                 "High-speed xerox and clear document scanning for all your
                 school and office requirements."
               </div>

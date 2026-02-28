@@ -22,21 +22,14 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden">
+    <main className="min-h-screen font-sans text-slate-900 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative h-[70vh] max-md:h-screen flex items-center justify-center bg-blue-900 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <img
-            src="/images/heroBG.png"
-            alt="Background"
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <section className="mt-28 pb-20 flex items-center justify-center overflow-hidden">
         <div className="relative z-10 text-center px-4 justify-center">
           <h2 className="text-4xl md:text-6xl font-extrabold mb-4 uppercase tracking-tighter">
             Your One-Stop Print Shop
           </h2>
-          <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl max-w-2xl mx-auto">
             High-quality printing, digital services, and school supplies located
             in the heart of Tanza.
           </p>
@@ -84,7 +77,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-2 text-slate-800">
                 {service.title}
               </h3>
-              <p className="text-slate-500 text-sm leading-relaxed">
+              <p className="text-slate-500 leading-relaxed">
                 Professional and quick service for all your personal or business
                 needs.
               </p>

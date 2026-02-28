@@ -10,32 +10,32 @@ const idPackages = [
 
 const RushIDPackage = () => {
   return (
-    <section id="pricing" className="py-20 bg-white">
+    <section id="pricing" className="py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-20">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 uppercase tracking-tight">
             Rush ID Packages
           </h2>
-          <p className="text-slate-500 mt-2">
+          <p className="mt-2">
             Get high-quality ID photos in minutes
           </p>
           <div className="h-1.5 w-20 bg-blue-600 mx-auto mt-4 rounded-full"></div>
         </div>
 
         {/* Package Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-12">
           {idPackages.map((pkg, index) => (
             <div
               key={pkg.id}
               className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col items-center text-center hover:border-blue-500 transition-all group"
             >
-              <span className="bg-blue-950 text-white text-sm font-bold px-3 py-1 rounded-full mb-4">
+              <span className="bg-blue-950 text-white font-bold px-3 py-1 rounded-full mb-4">
                 PACKAGE {pkg.id}
               </span>
               <div className="text-3xl font-black text-blue-600 mb-4">
                 ₱{pkg.price}
               </div>
-              <p className="text-slate-700 text-sm font-medium leading-relaxed">
+              <p className="text-slate-700 font-medium text-xl leading-relaxed">
                 {pkg.details}
               </p>
             </div>
@@ -56,7 +56,7 @@ const RushIDPackage = () => {
             ADD ONS
           </h3>
 
-          <div className="space-y-4 relative z-10">
+          <div className="space-y-4 relative z-10 text-lg">
             <div className="flex justify-between items-center border-b border-blue-900 pb-2">
               <span className="font-medium">Change Attire</span>
               <span className="text-blue-400 font-bold">₱10</span>
@@ -67,7 +67,7 @@ const RushIDPackage = () => {
             </div>
           </div>
 
-          <p className="text-[10px] text-blue-300 mt-6 text-center uppercase tracking-widest">
+          <p className="mt-6 text-center uppercase tracking-widest">
             Available for all ID packages
           </p>
         </div>

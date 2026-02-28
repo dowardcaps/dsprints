@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <>
       {/* Navigation */}
-      <nav className="max-w-8xl mx-auto px-6 md:px-20 container_padding bg-blue-900 h-20 flex justify-between items-center text-white top-0 z-50 shadow-lg">
+      <nav className="max-w-8xl mx-auto px-6 md:px-20 container_padding h-20 flex justify-between items-center top-0 z-50">
         {/* Mobile Menu Button (Left Side) */}
         <button
           className="lg:hidden p-2 hover:bg-blue-900 rounded-lg transition-colors"
@@ -42,7 +42,7 @@ const NavBar = () => {
             <li key={link.name}>
               <a
                 href={link.href}
-                className="hover:text-blue-300 transition-colors cursor-pointer"
+                className="hover:text-blue-500 transition-colors cursor-pointer"
               >
                 {link.name}
               </a>

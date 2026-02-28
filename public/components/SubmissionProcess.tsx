@@ -48,7 +48,7 @@ const SubmissionProcess = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-slate-50 transition-colors duration-300 w-full">
+    <section className="py-20 px-6 bg-white transition-colors duration-300 w-full rounded-xl">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-black text-blue-950 uppercase tracking-tighter">
@@ -62,8 +62,6 @@ const SubmissionProcess = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 relative">
-          {/* Connector Line (Desktop) */}
-          <div className="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-blue-100 -z-10 transform -translate-y-1/2"></div>
 
           {steps.map((step, index) => (
             <div 
@@ -79,7 +77,7 @@ const SubmissionProcess = () => {
               <h3 className="text-xl font-black text-blue-950 mb-4 uppercase">
                 {step.id}. {step.title}
               </h3>
-              <p className="text-slate-600  text-sm leading-relaxed mb-6 px-4">
+              <p className="text-slate-600 leading-relaxed mb-6 px-4">
                 {step.description}
               </p>
 
@@ -87,11 +85,11 @@ const SubmissionProcess = () => {
               {step.subMethods && (
                 <div className="w-full space-y-2 px-6">
                   {step.subMethods.map((method, i) => (
-                    <div key={i} className="flex items-center gap-3 p-3 bg-white border border-slate-100 rounded-xl shadow-sm">
+                    <div key={i} className="flex items-center gap-3 p-3 border border-slate-100 rounded-xl shadow-sm">
                       <div className="text-blue-600">{method.icon}</div>
                       <div className="text-left">
-                        <p className="text-[10px] font-bold text-slate-400 uppercase leading-none mb-1">{method.label}</p>
-                        <p className="text-xs font-bold text-slate-700">{method.detail}</p>
+                        <p className="font-bold text-slate-400 uppercase leading-none mb-1">{method.label}</p>
+                        <p className="font-bold text-slate-700">{method.detail}</p>
                       </div>
                     </div>
                   ))}
