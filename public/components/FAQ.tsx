@@ -24,14 +24,14 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="py-20 px-6 dark:bg-slate-950 transition-colors duration-300">
+    <section id="faq" className="py-20 px-6 transition-colors duration-300">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12" data-aos="fade-up">
           <div className="flex justify-center mb-4 text-blue-600">
             <HelpCircle size={40} />
           </div>
-          <h2 className="text-3xl md:text-4xl font-black text-blue-950 dark:text-white uppercase tracking-tighter">
+          <h2 className="text-3xl md:text-4xl font-black text-blue-950 uppercase tracking-tighter">
             Frequently Asked Questions
           </h2>
           <div className="h-1.5 w-20 bg-blue-600 mx-auto mt-4 rounded-full"></div>
@@ -48,10 +48,10 @@ const FAQSection = () => {
             <Accordion.Item
               key={index}
               value={`item-${index}`}
-              className="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden bg-white dark:bg-slate-900/50"
+              className="border border-slate-200 rounded-2xl overflow-hidden bg-white"
             >
               <Accordion.Header className="flex">
-                <Accordion.Trigger className="flex flex-1 text-lg items-center justify-between px-6 py-5 text-left font-bold text-blue-950 dark:text-slate-100 hover:bg-blue-50 dark:hover:bg-slate-800 transition-all group cursor-pointer">
+                <Accordion.Trigger className="flex flex-1 text-lg items-center justify-between px-6 py-5 text-left font-bold text-blue-950 hover:bg-blue-50 transition-all group cursor-pointer">
                   {faq.question}
                   <ChevronDown 
                     size={20} 
@@ -60,8 +60,8 @@ const FAQSection = () => {
                 </Accordion.Trigger>
               </Accordion.Header>
               
-              <Accordion.Content className="px-6 pb-5 text-slate-600 dark:text-slate-400 leading-relaxed data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden">
-                <div className="pt-2 border-t border-slate-200 dark:border-slate-800 mt-2">
+              <Accordion.Content className="px-6 pb-5 text-slate-600 leading-relaxed data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden">
+                <div className="pt-2 border-t border-slate-200 mt-2">
                   {faq.answer}
                 </div>
               </Accordion.Content>

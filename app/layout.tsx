@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "DS Prints & Supplies | Quality Printing Services in Tanza, Cavite",
   description:
-    "DS Prints & Supplies offers affordable, high-quality Rush ID packages, document printing, lamination, and photo printing in Amaya 1, Tanza. Your one-stop shop for school supplies and digital services.",
+    "DS Prints & Supplies offers affordable, high-quality Rush ID packages, document printing, lamination, and photo printing.",
   keywords: [
     "Printing Services Cavite",
     "Rush ID Tanza",
