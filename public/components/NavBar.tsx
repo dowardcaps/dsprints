@@ -17,10 +17,10 @@ const NavBar = () => {
   return (
     <>
       {/* Navigation */}
-      <nav className="w-full bg-blue-900 h-20 flex justify-between items-center px-6 md:px-12 text-white fixed top-0 z-50 shadow-lg">
+      <nav className="max-w-8xl mx-auto px-6 md:px-20 container_padding bg-blue-900 h-20 flex justify-between items-center text-white top-0 z-50 shadow-lg">
         {/* Mobile Menu Button (Left Side) */}
         <button
-          className="md:hidden p-2 hover:bg-blue-900 rounded-lg transition-colors"
+          className="lg:hidden p-2 hover:bg-blue-900 rounded-lg transition-colors"
           onClick={toggleMenu}
           aria-label="Toggle Menu"
         >
@@ -31,13 +31,13 @@ const NavBar = () => {
           <div className="w-10 h-10">
             <img src="/images/icon.png" alt="logo" width={40} height={40} />
           </div>
-          <h1 className="font-bold text-lg md:text-2xl tracking-tight">
+          <h1 className="font-bold text-lg lg:text-2xl tracking-tight">
             DS PRINTS & SUPPLIES
           </h1>
         </a>
 
         {/* Desktop Menu */}
-        <ul className="flex items-center gap-8 max-md:hidden font-medium">
+        <ul className="flex items-center gap-8 max-lg:hidden font-medium">
           {navLinks.map((link) => (
             <li key={link.name}>
               <a
@@ -53,14 +53,14 @@ const NavBar = () => {
         {/* Mobile Side Drawer Overlay */}
         {isMenuOpen && (
           <div
-            className="fixed inset-0 bg-black/50 z-60 md:hidden"
+            className="fixed inset-0 bg-black/50 z-60 lg:hidden"
             onClick={toggleMenu}
           />
         )}
 
         {/* Mobile Side Drawer (Slides from Left) */}
         <div
-          className={`fixed top-0 left-0 h-full w-70 bg-blue-950 z-70 transform transition-transform duration-300 ease-in-out md:hidden 
+          className={`fixed top-0 left-0 h-full w-70 bg-blue-950 z-70 transform transition-transform duration-300 ease-in-out lg:hidden 
           ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
         >
           <div className="p-6">

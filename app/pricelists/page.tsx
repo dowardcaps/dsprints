@@ -68,10 +68,6 @@ const SectionHeader = ({ title, subtitle }: { title: string; subtitle: string })
       <ChevronRight size={16} />
       <span>{subtitle}</span>
     </div>
-    <h2 className="text-3xl font-black text-blue-950 dark:text-white uppercase tracking-tight">
-      {title}
-    </h2>
-    <div className="h-1.5 w-16 bg-blue-600 mt-2 rounded-full"></div>
   </div>
 );
 

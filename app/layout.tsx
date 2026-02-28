@@ -31,11 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      {/* Adding suppressHydrationWarning here tells React not to 
-          panic if browser extensions add extra attributes 
-      */}
-
+    <html lang="en" className="scroll-smooth max-w-360 mx-auto">
       <body
         className={`${montserrat.variable} font-sans antialiased`}
         suppressHydrationWarning={true}
