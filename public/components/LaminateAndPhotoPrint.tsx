@@ -37,7 +37,7 @@ const LaminateAndPhotoPrint = () => {
 
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
       {/* Photo Print Section */}
-      <div className="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-100">
+      <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-100">
         <div className="flex items-center gap-3 mb-8">
           <ImageIcon className="text-blue-600" size={28} />
           <h3 className="text-2xl font-black text-blue-950 tracking-tight">PHOTO PRINT</h3>
@@ -59,7 +59,7 @@ const LaminateAndPhotoPrint = () => {
       </div>
 
       {/* Laminate Section */}
-      <div className="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-100">
+      <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-100">
         <div className="flex items-center gap-3 mb-8">
           <Layers className="text-blue-600" size={28} />
           <h3 className="text-2xl font-black text-blue-950 tracking-tight">LAMINATE</h3>

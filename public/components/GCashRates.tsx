@@ -42,7 +42,7 @@ const GCashRates = () => {
     </div>
 
     {/* Transaction Table */}
-    <div className="bg-slate-50 text-xl rounded-4xl p-4 md:p-10 border border-slate-100 shadow-sm">
+    <div className="bg-white text-xl rounded-4xl p-4 md:p-10 border border-slate-100 shadow-sm">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2">
         {/* Header hidden on mobile, shown on desktop */}
         <div className="hidden md:flex justify-between px-4 py-2 bg-blue-950 text-white rounded-t-xl font-bold uppercase tracking-widest">
@@ -63,7 +63,7 @@ const GCashRates = () => {
       </div>
       
       <div className="mt-8 text-center">
-        <span className="inline-block bg-blue-100 text-blue-700 font-bold px-4 py-2 rounded-full uppercase tracking-widest">
+        <span className="inline-block bg-blue-100 text-blue-700 font-bold px-6 py-2 rounded-full text-sm uppercase tracking-widest">
           Rates apply to both Cash-in and Cash-out
         </span>
       </div>
