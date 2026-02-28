@@ -9,7 +9,7 @@ import XeroxAndDocuPrinting from "@/public/components/XeroxAndDocuPrinting";
 
 const PriceLists = () => {
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pb-20">
+    <div className="min-h-screen bg-slate-50 pb-20">
       {/* Header Section */}
       <div className="bg-blue-950 text-white pt-30 pb-10 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-4">
@@ -21,7 +21,7 @@ const PriceLists = () => {
       </div>
 
       {/* Content Container */}
-      <div className="max-w-7xl mx-auto px-6 mt-12 space-y-24">
+      <div className="max-w-7xl mx-auto mt-12 space-y-24">
         
         {/* Photocopy/Xerox and Document Printing */}
         <section id="printing" className="scroll-mt-40">
@@ -51,8 +51,8 @@ const PriceLists = () => {
 
       {/* Disclaimer */}
       <div className="max-w-3xl mx-auto mt-20 px-6">
-        <div className="bg-blue-50 dark:bg-slate-900 p-6 rounded-2xl border border-blue-100 dark:border-slate-800 text-center">
-          <p className="text-sm text-slate-500 dark:text-slate-400 italic">
+        <div className="bg-blue-50 p-6 rounded-2xl border border-blue-100 text-center">
+          <p className="text-sm text-slate-500 italic">
             * Prices are subject to change without prior notice. For bulk orders and special layouts, please contact us directly for a custom quote.
           </p>
         </div>

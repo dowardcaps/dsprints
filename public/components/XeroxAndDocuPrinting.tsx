@@ -74,7 +74,26 @@ const XeroxAndDocuPrinting = () => {
                   </div>
                 ))}
               </div>
-
+              {/* Partial Colored */}
+              <div>
+                <h4 className="font-bold text-blue-600 mb-3 flex items-center gap-2">
+                  ● PARTIAL COLORED
+                </h4>
+                {documentPrinting.partialColored.map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex justify-between py-1 border-b border-dashed border-slate-200"
+                  >
+                    <span className="text-slate-700">{item.type}</span>
+                    <span className="font-bold text-slate-900">
+                      ₱{item.price}{" "}
+                      <span className="text-sm text-slate-500 font-normal">
+                        /page
+                      </span>
+                    </span>
+                  </div>
+                ))}
+              </div>
               {/* Full Colored */}
               <div>
                 <h4 className="font-bold text-blue-600 mb-3 flex items-center gap-2">
@@ -149,6 +168,27 @@ const XeroxAndDocuPrinting = () => {
                   ● PARTIAL COLORED
                 </h4>
                 {photocopyXerox.partialColored.map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex justify-between py-1 border-b border-dashed border-slate-200"
+                  >
+                    <span className="text-slate-700">{item.type}</span>
+                    <span className="font-bold text-slate-900">
+                      ₱{item.price}{" "}
+                      <span className="text-sm text-slate-500 font-normal">
+                        /page
+                      </span>
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Full Colored */}
+              <div>
+                <h4 className="font-bold text-blue-600 mb-3 flex items-center gap-2">
+                  ● FULL COLORED
+                </h4>
+                {photocopyXerox.fullColored.map((item, i) => (
                   <div
                     key={i}
                     className="flex justify-between py-1 border-b border-dashed border-slate-200"
