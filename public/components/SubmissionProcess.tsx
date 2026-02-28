@@ -33,9 +33,9 @@ const SubmissionProcess = () => {
       icon: <Smartphone size={32} />,
       color: "bg-blue-500",
       subMethods: [
-        { label: "FB Messenger", icon: <FacebookIcon size={16} />, detail: "DS Prints & Supplies" },
-        { label: "Email", icon: <Mail size={16} />, detail: "dsprints27@gmail.com" },
-        { label: "Bluetooth", icon: <Bluetooth size={16} />, detail: "Available In-Store" },
+        { label: "FB Messenger", icon: <FacebookIcon size={24} />, detail: "DS Prints & Supplies" },
+        { label: "Email", icon: <Mail size={24} />, detail: "dsprints27@gmail.com" },
+        { label: "Bluetooth", icon: <Bluetooth size={24} />, detail: "Available In-Store" },
       ],
     },
     {
@@ -88,8 +88,8 @@ const SubmissionProcess = () => {
                     <div key={i} className="flex items-center gap-3 p-3 border border-slate-100 rounded-xl shadow-sm">
                       <div className="text-blue-600">{method.icon}</div>
                       <div className="text-left">
-                        <p className="font-bold text-slate-400 uppercase leading-none mb-1">{method.label}</p>
-                        <p className="font-bold text-slate-700">{method.detail}</p>
+                        <p className="font-bold text-slate-600 uppercase leading-none mb-1">{method.label}</p>
+                        <p className="font-bold">{method.detail}</p>
                       </div>
                     </div>
                   ))}
