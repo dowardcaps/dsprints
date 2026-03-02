@@ -20,7 +20,7 @@ const NavBar = () => {
       <nav className="max-w-8xl mx-auto px-6 md:px-20 container_padding h-20 flex justify-between items-center top-0 z-50">
         {/* Mobile Menu Button (Left Side) */}
         <button
-          className="lg:hidden p-2 hover:bg-blue-900 rounded-lg transition-colors"
+          className="lg:hidden p-2 hover:bg-blue-900 rounded-lg transition-colors hover:text-white"
           onClick={toggleMenu}
           aria-label="Toggle Menu"
         >
@@ -64,7 +64,7 @@ const NavBar = () => {
           ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
         >
           <div className="p-6">
-            <div className="flex justify-between items-center mb-10">
+            <div className="flex justify-between items-center mb-10 text-white">
               <span className="font-bold text-xl">MENU</span>
               <button
                 onClick={toggleMenu}
@@ -73,7 +73,7 @@ const NavBar = () => {
                 <X size={28} />
               </button>
             </div>
-            <ul className="flex flex-col gap-6 text-lg">
+            <ul className="flex flex-col gap-6 text-lg text-white">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <a
