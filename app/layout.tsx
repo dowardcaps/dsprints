@@ -3,6 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "DS Prints and Supplies | Amaya 1, Tanza, Cavite",
+  icons: {
+    icon: "/favicon.ico",
+  },
   description:
     "Quality prints for every purpose. Document printing, xerox & scan, laminate, rush ID photos, layout & design, and load & GCash — Amaya 1, Tanza, Cavite.",
 };
