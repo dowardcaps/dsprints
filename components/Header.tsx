@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const NAV_LINKS: { href: string; label: string }[] = [
@@ -28,9 +29,7 @@ export default function Header() {
     >
       <div className="section-shell flex items-center justify-between h-16">
         <a href="#top" className="flex items-center gap-2.5 shrink-0">
-          <span className="grid place-items-center h-9 w-9 rounded-full bg-fb-blue text-white font-display font-extrabold text-sm">
-            DS
-          </span>
+         <Image src="/assets/icon.png" alt="logo" height={25} width={25}/>
           <span className="font-display font-extrabold text-fb-ink text-[15px] sm:text-base leading-tight">
             DS Prints <span className="text-fb-blue">&amp; Supplies</span>
           </span>

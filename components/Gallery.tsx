@@ -37,7 +37,7 @@ const WORK_ITEMS: WorkItem[] = [
     caption: "Layout, print, and finishing for formal event invitations and programs.",
   },
     {
-    src: "/assets/rushid.jfif",
+    src: "/assets/rushid.jpg",
     label: "Rush ID Package",
     caption: "2by2, 1by1, and passport size IDs, printed in photo paper with a highest possible quality.",
   },

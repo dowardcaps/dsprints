@@ -7,14 +7,11 @@ export const metadata: Metadata = {
     "Quality prints for every purpose. Document printing, xerox & scan, laminate, rush ID photos, layout & design, and load & GCash — Amaya 1, Tanza, Cavite.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="font-body antialiased">{children}</body>
+        <body className="bg-slate-100 min-h-screen text-slate-900">{children}</body>
     </html>
   );
 }
+

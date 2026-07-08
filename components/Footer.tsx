@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const EXPLORE_LINKS = [
   { href: "#services", label: "Services" },
   { href: "#work", label: "Our Work" },
@@ -11,9 +13,7 @@ export default function Footer() {
       <div className="section-shell py-14 grid sm:grid-cols-2 gap-10">
         <div>
           <div className="flex items-center gap-2.5">
-            <span className="grid place-items-center h-9 w-9 rounded-full bg-fb-blue text-white font-display font-extrabold text-sm">
-              DS
-            </span>
+            <Image src="/assets/icon.png" alt="logo" height={70} width={70}/>
             <span className="font-display font-extrabold">
               DS Prints &amp; Supplies
             </span>
