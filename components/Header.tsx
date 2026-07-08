@@ -29,7 +29,7 @@ export default function Header() {
     >
       <div className="section-shell flex items-center justify-between h-16">
         <a href="#top" className="flex items-center gap-2.5 shrink-0">
-         <Image src="/assets/icon.png" alt="logo" height={25} width={25}/>
+         <Image src="/assets/icon.png" alt="logo" height={30} width={30}/>
           <span className="font-display font-extrabold text-fb-ink text-[15px] sm:text-base leading-tight">
             DS Prints <span className="text-fb-blue">&amp; Supplies</span>
           </span>

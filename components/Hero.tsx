@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden bg-white">
@@ -62,10 +64,8 @@ export default function Hero() {
             <div className="h-24 bg-gradient-to-r from-fb-blue to-fb-bluedeep" />
             <div className="px-6 pb-6">
               <div className="-mt-10 flex items-end gap-3">
-                <div className="h-20 w-20 rounded-2xl bg-white p-1 shadow-card shrink-0">
-                  <div className="h-full w-full rounded-xl bg-fb-blue grid place-items-center text-white font-display font-extrabold text-2xl">
-                    DS
-                  </div>
+                <div className="h-20 w-20 rounded-full bg-white p-1 shadow-card shrink-0">
+                  <Image src="/assets/icon.png" alt="logo" height={70} width={70}/>
                 </div>
                 <div className="pb-1">
                   <p className="font-display font-extrabold text-fb-ink text-lg leading-tight">
