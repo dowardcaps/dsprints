@@ -31,7 +31,7 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/share/198kQvo639/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-fb-blue text-white font-bold px-6 py-3.5 shadow-pop hover:bg-fb-bluedark transition-colors"

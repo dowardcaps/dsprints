@@ -66,7 +66,7 @@ export default function Testimonials() {
 
         <div className="mt-10 flex justify-center">
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/share/198kQvo639/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-fb-line px-6 py-3 text-sm font-bold text-fb-blue hover:bg-fb-mist transition-colors"

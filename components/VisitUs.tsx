@@ -18,7 +18,7 @@ export default function VisitUs() {
 
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/share/198kQvo639/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-white text-fb-blue font-bold px-6 py-3.5 hover:bg-white/90 transition-colors"
