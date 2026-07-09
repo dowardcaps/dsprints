@@ -49,7 +49,7 @@ export default function Header() {
 
         <div className="flex items-center gap-2">
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/share/198kQvo639/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-2 rounded-full bg-fb-blue text-white text-sm font-bold px-4 py-2 shadow-pop hover:bg-fb-bluedark transition-colors"
