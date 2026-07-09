@@ -37,7 +37,7 @@ export default function VisitUs() {
         <div className="rounded-2xl bg-white/10 border border-white/20 p-6 sm:p-8 backdrop-blur-sm">
           <dl className="divide-y divide-white/15">
             <Row label="Address" value="Amaya 1, Tanza, Cavite" />
-            <Row label="Hours (Mon–Sat)" value="6:00 AM – 8:00 PM" />
+            <Row label={`Hours (Mon \u2013 Sat)`} value={`7:00 AM \u2013 8:00 PM`} />
             <Row label="Sunday" value="Closed" />
             <Row label="Facebook" value="DS Prints and Supplies" />
             <Row label="Email" value="dsprints27@gmail.com" last />
